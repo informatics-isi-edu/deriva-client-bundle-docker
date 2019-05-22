@@ -6,12 +6,12 @@ The Windows docker image requires a Docker for Windows installation on a Windows
 
 ###### Build `deriva-client-bundle` release installer:
 ```
-docker run -it -v ${pwd}:C:\buildenv\build-deriva-client-release\output -w C:\buildenv\build-deriva-client-release --isolation=process isrddev/deriva-client-bundle-base-windows powershell .\build-release.ps1
+docker run -v ${pwd}:C:\buildenv\build-deriva-client-release\output -w C:\buildenv\build-deriva-client-release --isolation=process isrddev/deriva-client-bundle-base-windows powershell .\build-release.ps1
 ```
 
 ###### Build `deriva-client-bundle` development installer:
 ```
-docker run -it -v ${pwd}:C:\buildenv\build-deriva-client-dev\output -w C:\buildenv\build-deriva-client-dev --isolation=process isrddev/deriva-client-bundle-base-windows powershell .\build-dev.ps1
+docker run -v ${pwd}:C:\buildenv\build-deriva-client-dev\output -w C:\buildenv\build-deriva-client-dev --isolation=process isrddev/deriva-client-bundle-base-windows powershell .\build-dev.ps1
 ```
 
 ###### Build `isrddev/deriva-client-bundle-base-windows` image:
