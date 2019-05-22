@@ -14,7 +14,7 @@ docker run -it -v ${pwd}:C:\buildenv\build-deriva-client-release\output -w C:\bu
 docker run -it -v ${pwd}:C:\buildenv\build-deriva-client-dev\output -w C:\buildenv\build-deriva-client-dev --isolation=process isrddev/deriva-client-bundle-base-windows powershell .\build-dev.ps1
 ```
 
-###### Build base docker image:
+###### Build `isrddev/deriva-client-bundle-base-windows` image:
 
 From the `win` subdirectory:
 ```
