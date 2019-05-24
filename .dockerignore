@@ -1,0 +1,6 @@
+# ignore folders
+.git
+.cache
+.idea
+.thumbsdb
+.DS_Store
