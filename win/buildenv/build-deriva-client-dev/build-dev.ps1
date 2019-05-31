@@ -1,4 +1,4 @@
-pip install urllib3==1.24 2>&1 | %{"$_"}
+pip install urllib3==1.24.3 2>&1 | %{"$_"}
 pip install pyqt5==5.11.3 2>&1 | %{"$_"}
 pip install setuptools_scm 2>&1 | %{"$_"}
 pip install bdbag[boto,globus] 2>&1 | %{"$_"}

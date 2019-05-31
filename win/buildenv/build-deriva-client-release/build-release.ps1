@@ -1,4 +1,4 @@
-pip install urllib3==1.24 2>&1 | %{"$_"}
+pip install urllib3==1.24.3 2>&1 | %{"$_"}
 pip install setuptools_scm 2>&1 | %{"$_"}
 pip install deriva-client 2>&1 | %{"$_"}
 git clone https://github.com/informatics-isi-edu/deriva-client-bundle 2>&1 | %{"$_"}
