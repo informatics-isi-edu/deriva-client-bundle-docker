@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/windows:1809-amd64
+FROM mcr.microsoft.com/windows:1909-amd64
 MAINTAINER mdarcy@isi.edu
 
 COPY buildenv /buildenv
