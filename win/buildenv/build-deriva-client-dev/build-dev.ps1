@@ -1,6 +1,7 @@
 pip install pyqt5==5.11.3 2>&1 | %{"$_"}
 pip install setuptools_scm 2>&1 | %{"$_"}
 pip install bdbag[boto,globus] 2>&1 | %{"$_"}
+pip install bdbag_gui 2>&1 | %{"$_"}
 pip install fair-research-login 2>&1 | %{"$_"}
 pip install git+https://github.com/informatics-isi-edu/deriva-py.git 2>&1 | %{"$_"}
 pip install git+https://github.com/informatics-isi-edu/deriva-qt.git 2>&1 | %{"$_"}
