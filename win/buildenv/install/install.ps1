@@ -14,5 +14,5 @@ Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Co
 $env:path=$newPath
 gci env:path
 python -m pip install --upgrade pip wheel markdown==3.2.1 setuptools<45.0.0
-pip install .\cx_Freeze-6.0b1-cp35-cp35m-win_amd64.whl
+pip install .\cx_Freeze-6.2-cp35-cp35m-win_amd64.whl
 exit
