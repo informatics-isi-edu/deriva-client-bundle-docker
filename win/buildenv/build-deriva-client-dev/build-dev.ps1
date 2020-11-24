@@ -3,6 +3,7 @@ pip install setuptools_scm 2>&1 | %{"$_"}
 pip install bdbag[boto,globus] 2>&1 | %{"$_"}
 pip install bdbag_gui 2>&1 | %{"$_"}
 pip install fair-research-login 2>&1 | %{"$_"}
+pip install fair-identifiers-client 2>&1 | %{"$_"}
 pip install git+https://github.com/informatics-isi-edu/deriva-py.git 2>&1 | %{"$_"}
 pip install git+https://github.com/informatics-isi-edu/deriva-qt.git 2>&1 | %{"$_"}
 pip install deriva-catalog-manage[csv]@git+https://github.com/informatics-isi-edu/deriva-catalog-manage.git 2>&1 | %{"$_"}
