@@ -1,11 +1,10 @@
 function ErrorExit {
     if ($LASTEXITCODE -ne 0) { throw "Command returned exit code: $LASTEXITCODE" }
 }
-pip install pyqt5==5.15.2 2>&1 | %{"$_"}; ErrorExit
+pip install PyQtWebEngine==5.15.2 2>&1 | %{"$_"}; ErrorExit
 pip install setuptools_scm 2>&1 | %{"$_"}; ErrorExit
-pip install portalocker<=2.0.0  2>&1 | %{"$_"}; ErrorExit
 pip install bdbag[boto,globus] 2>&1 | %{"$_"}; ErrorExit
-pip install bdbag_gui 2>&1 | %{"$_"}; ErrorExit
+pip install git+https://github.com/fair-research/bdbag_gui.git 2>&1 | %{"$_"}; ErrorExit
 pip install fair-research-login 2>&1 | %{"$_"}; ErrorExit
 pip install fair-identifiers-client 2>&1 | %{"$_"}; ErrorExit
 pip install git+https://github.com/informatics-isi-edu/deriva-py.git 2>&1 | %{"$_"}; ErrorExit
