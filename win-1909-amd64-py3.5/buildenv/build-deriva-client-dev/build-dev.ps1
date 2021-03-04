@@ -3,7 +3,6 @@ function ErrorExit {
 }
 pip install pyqt5==5.11.3 2>&1 | %{"$_"}; ErrorExit
 pip install setuptools_scm 2>&1 | %{"$_"}; ErrorExit
-pip install portalocker<=2.0.0  2>&1 | %{"$_"}; ErrorExit
 pip install bdbag[boto,globus] 2>&1 | %{"$_"}; ErrorExit
 pip install bdbag_gui 2>&1 | %{"$_"}; ErrorExit
 pip install fair-research-login 2>&1 | %{"$_"}; ErrorExit
