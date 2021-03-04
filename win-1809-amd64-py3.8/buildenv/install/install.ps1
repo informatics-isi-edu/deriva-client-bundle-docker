@@ -1,7 +1,7 @@
 write-host "Downloading Python 3.8..."
-wget https://www.python.org/ftp/python/3.8.7/python-3.8.7-amd64.exe -OutFile python-3.8.7-amd64.exe
+wget https://www.python.org/ftp/python/3.8.8/python-3.8.8-amd64.exe -OutFile python-3.8.8-amd64.exe
 write-host "Installing Python 3.8..."
-cmd /c python-3.8.7-amd64.exe /quiet TargetDir=c:\Python38 InstallAllUsers=1 PrependPath=1
+cmd /c python-3.8.8-amd64.exe /quiet TargetDir=c:\Python38 InstallAllUsers=1 PrependPath=1
 write-host "Downloading Git for Windows..."
 wget https://github.com/git-for-windows/git/releases/download/v2.30.1.windows.1/Git-2.30.1-64-bit.exe -OutFile Git-2.30.1-64-bit.exe
 write-host "Installing Git for Windows..."
@@ -13,5 +13,5 @@ $newPath="C:\Python38;C:\Python38\Scripts;C:\Program Files\Git\cmd;" + $oldPath
 Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH -Value $newPath
 $env:path=$newPath
 gci env:path
-python -m pip install --upgrade pip wheel markdown==3.2.1 setuptools<45.0.0 cx_Freeze==6.5.3
+python -m pip install --upgrade pip wheel setuptools markdown==3.2.1 cx_Freeze>=6.5.3
 exit
