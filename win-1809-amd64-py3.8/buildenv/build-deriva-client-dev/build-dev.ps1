@@ -1,7 +1,7 @@
 function ErrorExit {
     if ($LASTEXITCODE -ne 0) { throw "Command returned exit code: $LASTEXITCODE" }
 }
-pip install PyQtWebEngine>=5.15 2>&1 | %{"$_"}; ErrorExit
+pip install PyQtWebEngine>=5.15.4 2>&1 | %{"$_"}; ErrorExit
 pip install setuptools_scm 2>&1 | %{"$_"}; ErrorExit
 pip install bdbag[boto,globus] 2>&1 | %{"$_"}; ErrorExit
 pip install bdbag_gui 2>&1 | %{"$_"}; ErrorExit
