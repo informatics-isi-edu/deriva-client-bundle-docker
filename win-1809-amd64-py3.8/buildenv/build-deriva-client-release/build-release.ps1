@@ -3,6 +3,7 @@ function ErrorExit {
 }
 pip install setuptools_scm 2>&1 | %{"$_"}; ErrorExit
 pip install deriva-client 2>&1 | %{"$_"}; ErrorExit
+pip install deriva-workbench 2>&1 | %{"$_"}; ErrorExit
 pip install deriva-catalog-manage[csv] 2>&1 | %{"$_"}; ErrorExit
 git clone https://github.com/informatics-isi-edu/deriva-client-bundle 2>&1 | %{"$_"}; ErrorExit
 cd deriva-client-bundle
