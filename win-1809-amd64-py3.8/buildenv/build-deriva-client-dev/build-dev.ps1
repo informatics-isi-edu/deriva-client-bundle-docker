@@ -5,6 +5,7 @@ pip install PyQtWebEngine>=5.15.4 2>&1 | %{"$_"}; ErrorExit
 pip install setuptools_scm 2>&1 | %{"$_"}; ErrorExit
 pip install bdbag[boto,globus] 2>&1 | %{"$_"}; ErrorExit
 pip install bdbag_gui 2>&1 | %{"$_"}; ErrorExit
+pip install minid 2>&1 | %{"$_"}; ErrorExit
 pip install fair-research-login 2>&1 | %{"$_"}; ErrorExit
 pip install fair-identifiers-client 2>&1 | %{"$_"}; ErrorExit
 pip install git+https://github.com/informatics-isi-edu/deriva-py.git 2>&1 | %{"$_"}; ErrorExit
