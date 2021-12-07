@@ -13,5 +13,5 @@ $newPath="C:\Python38;C:\Python38\Scripts;C:\Program Files\Git\cmd;" + $oldPath
 Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH -Value $newPath
 $env:path=$newPath
 gci env:path
-python -m pip install --upgrade pip wheel setuptools markdown==3.2.1 cx_Freeze>=6.5.3
+python -m pip install --upgrade pip wheel setuptools<=57.5.0 markdown==3.2.1 cx_Freeze>=6.5.3
 exit
